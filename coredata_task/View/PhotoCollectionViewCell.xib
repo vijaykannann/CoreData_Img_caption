@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="coredata_task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1s-7d-c0S">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="VOf-gH-VGZ">
+                                <rect key="frame" x="2" y="2" width="158" height="130"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VOf-gH-VGZ" firstAttribute="top" secondItem="Z1s-7d-c0S" secondAttribute="top" constant="2" id="GZB-Zf-8BT"/>
+                            <constraint firstItem="VOf-gH-VGZ" firstAttribute="leading" secondItem="Z1s-7d-c0S" secondAttribute="leading" constant="2" id="Gw2-XD-AoM"/>
+                            <constraint firstAttribute="trailing" secondItem="VOf-gH-VGZ" secondAttribute="trailing" constant="2" id="Z3s-j8-9aE"/>
+                            <constraint firstAttribute="bottom" secondItem="VOf-gH-VGZ" secondAttribute="bottom" constant="2" id="jOV-KT-tCC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Z1s-7d-c0S" secondAttribute="bottom" id="4jh-9F-5ng"/>
+                <constraint firstItem="Z1s-7d-c0S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fZF-NX-NGl"/>
+                <constraint firstAttribute="trailing" secondItem="Z1s-7d-c0S" secondAttribute="trailing" id="gfg-BL-tTm"/>
+                <constraint firstItem="Z1s-7d-c0S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xkA-gZ-GCk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="162" height="134"/>
+            <connections>
+                <outlet property="contentHolder" destination="Z1s-7d-c0S" id="dex-mV-3gs"/>
+                <outlet property="photoImgView" destination="VOf-gH-VGZ" id="FbF-jy-KKN"/>
+            </connections>
+            <point key="canvasLocation" x="56.521739130434788" y="156.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_image" width="360" height="360"/>
+    </resources>
+</document>
